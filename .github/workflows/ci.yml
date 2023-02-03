@@ -1,0 +1,35 @@
+name: CI
+on: [push]
+jobs:
+  lhci:
+    name: Lighthouse
+    runs-on: ubuntu-latest
+    if: github.ref == 'refs/heads/master'
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          ref: ${{ github.event.pull_request.head.sha }}
+      - name: Use Node.js 16.x
+        uses: actions/setup-node@v1
+        with:
+          node-version: 16.x
+      - name: run Lighthouse CI
+        run: |
+          npm install -g @lhci/cli@0.8.x
+          lhci autorun
+        env:
+          LHCI_GITHUB_APP_TOKEN: ${{ secrets.LHCI_GITHUB_APP_TOKEN }}
+  htmlch:
+    name: Proof HTML
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: 2.7.4
+          bundler-cache: true
+      - run: bundle exec jekyll build
+      - uses: anishathalye/proof-html@v2
+        with:
+          directory: ./_site
+          enforce_https: false
