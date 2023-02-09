@@ -25,6 +25,6 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - uses: anishathalye/proof-html@v2
-          with:
-            directory: ./site
-            enforce_https: false
+        with:
+          directory: ./site
+          enforce_https: false
