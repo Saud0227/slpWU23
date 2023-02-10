@@ -1,3 +1,60 @@
 body {
     margin: 0;
 }
+
+
+
+div.main-wrap {
+    width: 100vw;
+    height:300vh;
+    margin: 0;
+}
+
+
+header {
+    height: 10vh;
+    width: 100vw;
+    background-color: hsl(270, 100%, 87%);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+header img{
+    height: 80%;
+    margin-left: 2.5%;
+}
+
+
+div.splash-screen {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#splash-home {
+    height: 40vh;
+    background:none;
+}
+
+
+div#home-back-img {
+    height: 50vh;
+    width: 100vw;
+    position: fixed;
+    left:0;
+    top:0;
+    z-index: -10;
+    background-image: url(/img/school_temp.jpg);
+    background-size: cover;
+}
+
+
+div.link-box {
+    width: 100%;
+    height:20vh;
+    background-color: #0de1ce;
+}
