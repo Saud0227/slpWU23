@@ -58,3 +58,22 @@ div.link-box {
     height:20vh;
     background-color: #0de1ce;
 }
+
+
+div.about-us{
+    display: grid;
+    padding: 10%;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr;
+    height: 100vh;
+    row-gap: 5vh;
+    background-color:aquamarine;
+}
+
+div.about-us div.text-item {
+    background-color: red;
+}
+
+div.about-us img.img-item {
+    background-color: blue;
+}
