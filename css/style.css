@@ -2,7 +2,9 @@ body {
     margin: 0;
 }
 
-
+i.temp {
+    color: red;
+}
 
 div.main-wrap {
     width: 100vw;
@@ -18,6 +20,11 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+
+header h1 {
+    color: white;
+    font-size: 1.2em;
 }
 
 
@@ -48,7 +55,7 @@ div#splash-home div#tag-item {
     grid-template-rows: 1fr 1fr;
 
     height: 50%;
-    width: 70%;
+    width: 80%;
 
     border:solid 4px #62007A;
     box-shadow: 2px 2px 2px #3f3f3f;
@@ -82,11 +89,36 @@ div#splash-home div#tag-item div.profile-cont {
     border-radius: 0 0 20px 20px;
 }
 
-div#splash-home div#tag-item div.text-cont {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 60% 40%;
+div#splash-home div#tag-item div.profile-cont div {
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 90%;
+}
 
+div#splash-home div#tag-item div.profile-cont div h2 {
+    font-size: 1.2rem;
+    display: block;
+    margin-inline: 0;
+    margin-block: 0;
+    color: white;
+    text-align: center;
+}
+
+hr {
+    margin: 0;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+div#splash-home div#tag-item div.text-cont {
+    background-color: transparent;
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center; */
+    width: 90%;
+    justify-self:center;
 }
 
 
@@ -95,9 +127,12 @@ div#splash-home div#tag-item div.text-cont h2 {
     color: #FFFFFF;
     font-size: 5rem;
     margin: 0;
+
 }
 
-
+div#splash-home div#tag-item div.text-cont p {
+    color: white;
+}
 
 
 
