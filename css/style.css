@@ -51,13 +51,15 @@ div#splash-home {
 
 div#splash-home div#tag-item {
     display: grid;
+    position: absolute;
+    z-index: 100;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr;
 
     height: 50%;
     width: 80%;
 
-    border:solid 4px #62007A;
+    border:solid 4px rgb(98, 0, 122);
     box-shadow: 2px 2px 2px #3f3f3f;
 }
 
