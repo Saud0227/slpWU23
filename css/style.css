@@ -17,6 +17,7 @@ header {
     height: 10vh;
     width: 100vw;
     background-color: #62007A;
+    background: linear-gradient(0.75turn, #9323af, #62007A);
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -25,6 +26,12 @@ header {
 header h1 {
     color: white;
     font-size: 1.2em;
+    margin: 0;
+    margin-left: 20px;
+}
+
+header i{
+    font-size: 50px !important;
 }
 
 
@@ -131,6 +138,7 @@ div#splash-home div#tag-item div.text-cont h2 {
 
 div#splash-home div#tag-item div.text-cont p {
     color: white;
+    margin-top: 0;
 }
 
 
