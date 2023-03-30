@@ -1,123 +1,37 @@
-* {
-    color: #FFFFFF
-}
-
 body {
     margin: 0;
-    background: radial-gradient(ellipse at bottom, #0d1d31 0%, #0c0d13 200%);
-    background-color: #0a1625;
-
 }
 
 i.temp {
     color: red;
 }
 
+div.main-wrap {
+    width: 100vw;
+    height:300vh;
+    margin: 0;
+}
+
 
 header {
     height: 10vh;
     width: 100vw;
-    /* background-color: #444444; */
-    /* background: linear-gradient(0.75turn, #9323af, #62007A); */
-    display: grid;
-    align-items: center;
-    /* justify-content: space-between; */
-    grid-template-rows: 1fr;
-    grid-template-columns: 10% auto 20%;
-}
-
-header div.color-blob {
-    width: 20px;
-    height: 20px;
-    justify-self: center;
-    border-radius: 20px;
-    /* background-color: #62007A; */
-    background: linear-gradient(0.15turn, #9323af, #62007A);
-}
-
-span.visually-hidden {
-    clip: rect(0 0 0 0);
-    clip-path: inset(50%);
-    height: 1px;
-    overflow: hidden;
-    position: absolute;
-    white-space: nowrap;
-    width: 1px;
-}
-
-nav {
-    /* position: absolute; */
-    /* top: 40px; */
-    right: 5vw;
-    justify-self: center;
-}
-
-#menu-toggle {
-    padding: 0.5em;
-    position: relative;
-    right: 0;
-    top: 0;
-    z-index: 10;
-
-    background: transparent;
-    color: transparent;
-    border: 0;
-    /* position: a; */
-    cursor: pointer;
-}
-
-div#primary-navigation {
+    background-color: #62007A;
     display: flex;
-    position: fixed;
-    top: 0;
-    right: 0;
-    /* overflow: hidden; */
-    background: radial-gradient(ellipse at bottom, #9323af 0%, #0c0d13 200%);
-    clip-path: circle(0px at top right);
-    transition: clip-path ease-in-out 700ms;
-    margin: 0;
-    /* padding: 100em; */
-    width: 100vw;
-    height: 100vh;
-    list-style: none;
-    z-index: 0;
-
-
-    flex-direction: column;
     align-items: center;
-    justify-content: space-around;
-    padding-bottom: 20vh;
-
-}
-
-[aria-expanded="true"]+#primary-navigation {
-    clip-path: circle(250% at top right);
-}
-
-
-
-
-div#primary-navigation a {
-    width: 50%;
-    /* height: 10%; */
-    align-self: center;
-    text-align: center;
-    padding: 5% 5% 5% 5%;
-    background: radial-gradient(ellipse at bottom, #0d1d31 20%, #0c0d13 200%);;
+    justify-content: space-between;
 }
 
 header h1 {
     color: white;
     font-size: 1.2em;
-    margin: 0;
-    /* margin-left: 10px; */
 }
 
-header i {
-    font-size: 50px !important;
-}
 
-/* First Page BS */
+header img{
+    height: 80%;
+    margin-left: 2.5%;
+}
 
 
 div.splash-screen {
@@ -128,35 +42,37 @@ div.splash-screen {
 }
 
 
-/* div#splash-home {
-    height: auto;
-    background: none;
-    background-color: #444444;
-    width: 100%;
-} */
-
-
-div#tag-item {
-    display: grid;
-
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr auto 1fr;
-
-    row-gap: 5%;
-
-
-    height: auto;
-    width: 100%;
-    padding-bottom: 5%;
-
-
+div#splash-home {
+    height: 80vh;
+    background:none;
+    background-color: #000000;
 }
 
 
-div#tag-item img {
+div#splash-home div#tag-item {
+    display: grid;
+    position: absolute;
+    z-index: 100;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+
+    height: 50%;
     width: 80%;
-    /* margin: 10% 0 10% 0; */
-    height: auto;
+
+    border:solid 4px rgb(98, 0, 122);
+    box-shadow: 2px 2px 2px #3f3f3f;
+}
+
+div#splash-home div {
+    border-radius: 20px;
+    background-color: #3f3f3f;
+}
+
+
+
+div#splash-home img{
+    height: 15vh;
+    width: 15vh;
     align-self: center;
     justify-self: center;
 }
@@ -167,23 +83,47 @@ img#profile {
 }
 
 
+div#splash-home div#tag-item div.profile-cont {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 50% 50%;
+    background-color: #444444;
+    border-radius: 0 0 20px 20px;
+}
+
+div#splash-home div#tag-item div.profile-cont div {
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 90%;
+}
+
+div#splash-home div#tag-item div.profile-cont div h2 {
+    font-size: 1.2rem;
+    display: block;
+    margin: 0;
+    color: white;
+    text-align: center;
+}
+
 hr {
     margin: 0;
     margin-top: 5px;
     margin-bottom: 5px;
 }
 
-div#tag-item div.text-cont {
-    /* background-color: transparent; */
+div#splash-home div#tag-item div.text-cont {
+    background-color: transparent;
     /* display: flex;
     flex-direction: column;
     justify-content: center; */
     width: 90%;
-    justify-self: center;
+    justify-self:center;
 }
 
 
-div#tag-item div.text-cont h2 {
+div#splash-home div#tag-item div.text-cont h2 {
     display: block;
     color: #FFFFFF;
     font-size: 5rem;
@@ -191,83 +131,33 @@ div#tag-item div.text-cont h2 {
 
 }
 
-div#tag-item div.text-cont h3 {
-    display: block;
-    color: #FFFFFF;
-    font-size: 1.2rem;
-    margin: 0;
-    margin-bottom: 0.5em;
-
-}
-
-div#tag-item div.text-cont p {
+div#splash-home div#tag-item div.text-cont p {
     color: white;
-    margin-top: 0;
-    margin-bottom: 1em;
 }
 
-div.color-blobs {
+
+
+div.link-box {
+    width: 100%;
+    height:20vh;
+    background-color: #0de1ce;
+}
+
+
+div.about-us{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr;
-
-
-    padding: 5% 0 5% 0;
+    padding: 10%;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr;
+    height: 100vh;
+    row-gap: 5vh;
+    background-color:aquamarine;
 }
 
-div.color-blobs div.color-blob {
-    width: 50px;
-    height: 50px;
-    border-radius: 1000px;
-    justify-self: center;
-    align-self: center;
+div.about-us div.text-item {
+    background-color: red;
 }
 
-div.color-blobs div.color-blob:nth-child(1) {
-    background-color: #C800FA;
-}
-
-div.color-blobs div.color-blob:nth-child(2) {
-    background-color: rgb(0, 110, 255);
-}
-
-div.color-blobs div.color-blob:nth-child(3) {
-    background-color: rgb(63, 192, 13);
-}
-
-div.color-blobs div.color-blob:nth-child(4) {
-    background-color: #C800FA;
-}
-
-
-/* FIRST PAGE DONE */
-
-
-
-footer {
-    margin: 0;
-    width: 90%;
-    padding: 5% 5% 5% 5%;
-    height: auto;
-    border-top: solid 2px #62007A;
-    /* background-color: #444444; */
-}
-
-footer h3 {
-    margin: 0;
-}
-
-footer h3:first-child {
-    margin: 0;
-    margin-top: 0.5em;
-}
-
-footer p {
-    margin: 0;
-    margin-bottom: 1.5em;
-}
-
-footer p:last-child {
-    margin: 0;
-    /* margin-bottom: 1.5em; */
+div.about-us img.img-item {
+    background-color: blue;
 }
