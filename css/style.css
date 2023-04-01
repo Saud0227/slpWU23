@@ -178,7 +178,8 @@ div#tag-item {
 
     height: auto;
     width: 100%;
-    padding-bottom: 5%;
+    margin-bottom: 5%;
+    margin-top: 20%;
 
 }
 
@@ -242,7 +243,7 @@ div.color-blobs {
     grid-template-rows: 1fr;
 
 
-    padding: 5% 0 5% 0;
+    margin: 5% 0 5% 0;
 }
 
 div.color-blobs div.color-blob {
@@ -313,25 +314,26 @@ div.studies-content {
     /* row-gap: 5vh; */
     width: 90%;
     height: 90%;
-    padding: 5%;
+    margin: 5%;
+    margin-top: 20%;
 }
 
 
 div.studies-content div.box-item{
     width: 90%;
     height: auto;
-    padding:5%;
+    margin:5%;
 }
 
 div.studies-content div.header-item{
     width: 90%;
     height: auto;
-    padding:5%;
-    padding-top: 20%;
+    margin:5%;
+    margin-top: 20%;
 }
 
 div.studies-content div.header-item:first-child{
-    padding-top: 5%;
+    margin-top: 5%;
 }
 
 div.studies-content div.header-item h2{
@@ -339,7 +341,7 @@ div.studies-content div.header-item h2{
 }
 
 div.studies-content div.experiences {
-    padding: 3% 5% 3% 5%;
+    margin: 3% 5% 3% 5%;
 }
 
 div.studies-content div.experiences p{
@@ -353,5 +355,139 @@ div.studies-content div.experiences p{
 
 
 div.contact-container {
-    height: 70vh;
+    height: auto;
+    width: 80%;
+
+    margin: 20% 5% 20% 5%;
+    padding: 5%;
+}
+
+div.contact-container h2{
+    margin: 0;
+    margin-bottom: 0.5em;
+}
+
+
+form#contact-form {
+    /* height: 70vh; */
+    display: block;
+}
+
+form#contact-form div.h-split{
+    display: grid;
+    grid-template-columns: min-content auto;
+    align-items: center;
+    margin-bottom: 5%;
+}
+
+
+form#contact-form input {
+    display: block;
+    border: none;
+    background-color: #0d1d31;
+    /* background: radial-gradient(ellipse at bottom, #522585 5%, #0d1d31 80%); */
+    border: solid 3px #9323af;
+    margin: 0;
+    padding: 0;
+}
+
+form#contact-form input:focus-visible {
+    border-color: #1f81f8;
+    border-width: 3px;
+    margin: 0;
+    outline: none;
+}
+
+form#contact-form div.h-split label {
+    white-space: nowrap;
+    margin-right: 5px;
+}
+
+form#contact-form div.h-split input {
+    height: 2rem;
+}
+
+form#contact-form div.msg-box {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: min-content auto;
+    height: 30vh;
+}
+
+form#contact-form textarea{
+    display: block;
+    border: none;
+    background-color: #0d1d31;
+    /* background: radial-gradient(ellipse at bottom, #522585 5%, #0d1d31 80%); */
+    border: solid 3px #9323af;
+    margin: 0;
+    padding: 0;
+    /* height: 30vh; */
+}
+
+form#contact-form textarea:focus-visible {
+    border-color: #1f81f8;
+    border-width: 3px;
+    margin: 0;
+    outline: none;
+}
+
+
+form#contact-form button {
+    width: 90%;
+    margin: 5% 5% 0 5%;
+    padding: 5%;
+    border: none;
+    background: radial-gradient(ellipse at bottom, #2e64a6 0%, #0c0d13 70%);
+    background-size: 100% 500%;
+    background-position-y: 10%;
+    text-decoration: none;
+    font-size: 1.5em;
+    transition: background-position-y ease-in-out 700ms;
+}
+
+form#contact-form button:hover{
+    background-position-y: 90%;
+}
+
+form#contact-form button:active{
+    background-position-y: 90%;
+}
+
+
+
+
+
+
+div.projects {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 90%;
+    margin: 20% 5% 5% 5%;
+    height: fit-content;
+    grid-auto-rows: 1fr;
+    /* row-gap: 5%; */
+}
+
+div.projects div.project {
+    width: 90%;
+    padding: 5%;
+    margin-bottom: 20%;
+}
+
+
+div.projects div.project img{
+    width: 90%;
+    margin: 5%;
+}
+
+
+
+.backdrop-purple-with-border {
+    background: radial-gradient(ellipse at bottom, #3d1f5e 5%, #0d1d31 80%);
+    border: solid 1px #2e64a6;
+}
+
+.backdrop-blue-borderless {
+    background: radial-gradient(ellipse at left, #0f2642 30%, #0c0d13 190%);
 }

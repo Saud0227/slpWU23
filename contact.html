@@ -4,14 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta id="viewport" name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/stars.css">
     <!-- div favicon -->
     <link rel="icon" type="image/x-icon" href="/img/saud.ico">
-    <meta name="theme-color" content="black-translucent">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta id="theme" name="theme-color" content="black-translucent">
+    <meta id="apple" name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 
 
     <link rel="stylesheet"
@@ -21,7 +21,7 @@
 <body>
 
 
-    <div class="star-container">
+    <div id="contact" class="star-container">
         <div class="stars">
             <div class="star"></div>
             <div class="star"></div>
@@ -76,7 +76,8 @@
         </div>
     </div>
 
-    <header>
+
+    <header class="backdrop-blue-borderless">
         <div class="color-blob"></div>
         <h1>Contact Me!</h1>
         <nav>
@@ -87,19 +88,42 @@
             </button>
 
             <div data-state="closed" id="primary-navigation">
-                <a href="/">Home</a>
-                <a href="/studies.html">Studies</a>
-                <a href="/work.html">Work</a>
-                <a href="/contact.html">Contact</a>
+                <a href="index.html">Home</a>
+                <a href="studies.html">Studies</a>
+                <a href="projects.html">Projects</a>
+                <a href="contact.html">Contact</a>
             </div>
         </nav>
     </header>
 
-    <div class="contact-container">
+    <div class="contact-container backdrop-purple-with-border">
         <h2>Send me a message!</h2>
+        <form id="contact-form">
+            <div class="h-split">
+                <label for="fname">First name</label>
+                <input type="text" id="fname" name="fname">
+            </div>
+            <div class="h-split">
+                <label for="lname">Last name</label>
+                <input type="text" id="lname" name="lname">
+            </div>
+
+            <div class="h-split">
+                <label for="mail">Mail</label>
+                <input type="text" id="mail" name="mail">
+            </div>
+
+            <div class="msg-box">
+
+                <label for="msg">Message</label>
+                <textarea id="msg" name="msg"></textarea>
+            </div>
+
+            <button type="submit">SUBMIT</button>
+        </form>
     </div>
 
-    <footer>
+    <footer class="backdrop-blue-borderless">
         <h3>Mail</h3>
         <p>name.surname@gmail.com</p>
 
