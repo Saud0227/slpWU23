@@ -34,8 +34,32 @@ div.star-container {
 
 
 #projects {
-    height:265vh;
+    height:650vh;
 }
+
+@media only screen and (min-width: 768px) {
+    #index {
+        height: 100vh;
+    }
+
+    #star-desktop-index {
+        width: 200%;
+        height: 200%;
+        left: 10%;
+        top: -100%;
+        transform: rotate(-45deg);
+    }
+
+    #studies {
+        height: 200vh;
+    }
+
+    #projects {
+        height:220vh;
+    }
+
+}
+
 
 
 .stars {
