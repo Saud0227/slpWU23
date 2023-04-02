@@ -15,7 +15,7 @@ div.star-container {
     height: 135vh;
 }
 
-#studies {
+#resume {
     height: 255vh;
 }
 
@@ -50,12 +50,12 @@ div.star-container {
         transform: rotate(-45deg);
     }
 
-    #studies {
-        height: 200vh;
+    #resume {
+        height: 270vh;
     }
 
     #projects {
-        height:220vh;
+        height:140vh;
     }
 
 }

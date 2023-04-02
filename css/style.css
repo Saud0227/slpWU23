@@ -1,5 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap');
+
+
 * {
-    color: #FFFFFF
+    color: #FFFFFF;
+    font-family: 'Raleway', sans-serif;
 }
 
 body {
@@ -136,6 +140,7 @@ div#primary-navigation a {
     text-decoration: none;
     font-size: 1.5em;
     transition: background-position-y ease-in-out 700ms;
+    text-transform: uppercase;
 }
 
 div#primary-navigation a:hover {
@@ -150,6 +155,7 @@ header h1 {
     color: white;
     font-size: 1.2em;
     margin: 0;
+    text-transform: uppercase;
 }
 
 header i {
@@ -299,7 +305,7 @@ footer section:last-child p {
 
 
 
-div.studies-content {
+div.resume-content {
     display: grid;
     grid-template-columns: 1fr;
     grid-auto-rows: auto;
@@ -311,22 +317,22 @@ div.studies-content {
 }
 
 
-div.studies-content section div.box-item {
+div.resume-content section div.box-item {
     width: 90%;
     height: auto;
     margin: 20% 2% 20% 2%;
     padding: 3%;
 }
 
-div.studies-content section div.box-item:nth-child(2) {
+div.resume-content section div.box-item:nth-child(2) {
     margin-top: 10%;
 }
 
-div.studies-content section div.box-item:last-child {
+div.resume-content section div.box-item:last-child {
     margin-bottom: 0;
 }
 
-div.studies-content section div.header-item {
+div.resume-content section div.header-item {
     width: 90%;
     padding: 5%;
     height: auto;
@@ -334,19 +340,19 @@ div.studies-content section div.header-item {
     margin-top: 25%;
 }
 
-div.studies-content section:first-child div.header-item {
+div.resume-content section:first-child div.header-item {
     margin-top: 5%;
 }
 
-div.studies-content section div.header-item h2 {
+div.resume-content section div.header-item h2 {
     margin: 0;
 }
 
-div.studies-content section div.experiences {
+div.resume-content section div.experiences {
     margin: 5% 2% 5% 2%;
 }
 
-div.studies-content section div.experiences p {
+div.resume-content section div.experiences p {
     margin: 0;
 }
 
@@ -382,7 +388,7 @@ form#contact-form {
 
 form#contact-form div.form-split {
     display: grid;
-    grid-template-columns: 15% auto;
+    grid-template-columns: 30% auto;
     align-items: center;
     margin-bottom: 5%;
 }
@@ -528,6 +534,16 @@ body {
 
 
 
+
+div#desktop-index-cover-container {
+    display: none;
+}
+
+div#desktop-index-cover-container img#desktop-index-cover {
+    display: none;
+}
+
+
 /* ------------------------------------------------------------------------------------------------------------------ */
 /* Desktop */
 
@@ -557,6 +573,7 @@ body {
 
     div#primary-navigation {
         display: grid;
+        background: none;
         grid-template-columns: repeat(4, 1fr);
         grid-template-rows: 1fr;
         position: static;
@@ -567,6 +584,7 @@ body {
     }
 
     div#primary-navigation a {
+        /* background: radial-gradient(ellipse at bottom, #2e64a6 0%, #0c0d1399 70%); */
         display: flex;
         align-items: center;
         justify-content: center;
@@ -610,9 +628,9 @@ body {
         margin: 0;
     }
 
-    div.studies-content {
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: auto auto;
+    div.resume-content {
+        /* grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto; */
         /* row-gap: 5%; */
         margin-top: 10%;
         margin-bottom: 3%;
@@ -620,11 +638,11 @@ body {
     }
 
 
-    div.studies-content section:last-child {
+    div.resume-content section:last-child {
         margin-top: 5%;
     }
 
-    div.studies-content section div.header-item {
+    div.resume-content section div.header-item {
         /* margin-top: 5%; */
         padding:3%;
         margin: 5% 2% 5% 2%;
@@ -645,7 +663,9 @@ body {
     }
 
 
-
+    form#contact-form div.form-split {
+        grid-template-columns: 15% auto;
+    }
 
 
 
@@ -658,7 +678,8 @@ body {
         flex-wrap: wrap;
         justify-content: space-between;
         /* row-gap: 10%; */
-        column-gap: 4%;
+        column-gap: 4vw;
+        justify-content: flex-start
     }
 
 
@@ -667,10 +688,10 @@ body {
         width: auto;
         height: fit-content;
         padding: 2%;
-        margin-bottom: 2%;
+        margin-bottom: 4vw;
 
         display: grid;
-        grid-template-columns: 20vw auto;
+        grid-template-columns: 14vw auto;
     }
 
     div.projects div.project img {
@@ -679,6 +700,25 @@ body {
         /* width: 50%; */
         height: 100%;
         margin: 0;
+    }
+
+
+    div#desktop-index-cover-container {
+        display: block;
+        position: absolute;
+        overflow: hidden;
+        position: absolute;
+        width: 100%;
+        bottom: 0%;
+        z-index: -10;
+        height: 80%;
+    }
+
+
+    div#desktop-index-cover-container img#desktop-index-cover {
+        display: block;
+        width: 100vw;
+        opacity: 20%;
     }
 
 }
