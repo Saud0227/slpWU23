@@ -85,7 +85,7 @@ div#primary-navigation {
 
     flex-direction: column;
     align-items: center;
-    justify-content: space-around;
+    /* justify-content: space-around; */
     padding-bottom: 20vh;
 
 }
@@ -126,30 +126,45 @@ div#primary-navigation {
 }
 
 
+div#primary-navigation div {
+    /* height: 60%; */
+    display: flex;
+    align-items: center;
+    /* padding: 15% 5% 15% 5%; */
+    width: 40%;
+    height: 50%;
+    border-radius: 8px;
+}
 
-
-div#primary-navigation a {
-    width: 50%;
+div#primary-navigation div a {
+    width: 100%;
+    /* height: 30%; */
+    text-align: center;
 
     align-self: center;
     text-align: center;
-    padding: 5% 5% 5% 5%;
-    background: radial-gradient(ellipse at bottom, #2e64a6 0%, #0c0d13 70%);
-    background-size: 100% 500%;
-    background-position-y: 0;
+    padding: 15% 0 15% 0;
+    border-radius: 8px;
+    /* background: radial-gradient(ellipse at bottom, #2e64a6 0%, #0c0d13 70%);
+     */
+    /* background:transparent; */
+    /* background-size: 100% 500%; */
+    /* background-position-y: 0; */
     text-decoration: none;
     font-size: 1.5em;
-    transition: background-position-y ease-in-out 700ms;
+    transition: background ease-in-out 150ms;
     text-transform: uppercase;
 }
 
-div#primary-navigation a:hover {
-    background-position-y: 90%;
+div#primary-navigation div a:hover {
+    /* background-position-y: 90%; */
+    background-color: #ffffff15;
+    border-radius: 8px;
 }
 
-div#primary-navigation a:active {
+/* div#primary-navigation div a:active {
     background-position-y: 90%;
-}
+} */
 
 header h1 {
     color: white;
@@ -239,7 +254,7 @@ div#tag-item div.text-cont p {
 
 div.color-blobs {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 1fr;
 
 
@@ -266,9 +281,6 @@ div.color-blobs div.color-blob:nth-child(3) {
     background-color: rgb(0, 195, 255);
 }
 
-div.color-blobs div.color-blob:nth-child(4) {
-    background-color: #C800FA;
-}
 
 
 /* FIRST PAGE DONE */
@@ -301,6 +313,18 @@ footer section:last-child p {
     margin: 0;
 }
 
+footer section p a{
+    text-decoration: none;
+}
+
+footer section p a::after{
+    content: " ";
+    margin-inline-end: 2%;
+}
+
+footer section p a:hover {
+    text-decoration: underline;
+}
 
 
 
@@ -583,17 +607,26 @@ div#desktop-index-cover-container img#desktop-index-cover {
         margin: 0;
     }
 
-    div#primary-navigation a {
+    div#primary-navigation div {
+        height: 60%;
+        width: 100%;
+    }
+
+    div#primary-navigation div a {
+        /* width: 50%; */
         /* background: radial-gradient(ellipse at bottom, #2e64a6 0%, #0c0d1399 70%); */
         display: flex;
         align-items: center;
         justify-content: center;
         width: 10vw;
         height: 100%;
-
+        /* padding: 15% 5% 15% 5%; */
         padding: 0;
+        border-radius: 8px;
+        background:transparent;
+
         /* padding: 35% 0 35% 0; */
-        margin: 0;
+        /* margin: 0; */
 
     }
 
@@ -697,32 +730,41 @@ div#desktop-index-cover-container img#desktop-index-cover {
 
         width: auto;
         height: auto;
-        display: flex;
+        /* display: flex;
         flex-wrap: wrap;
-        justify-content: space-between;
+        justify-content: space-between; */
         /* row-gap: 10%; */
-        column-gap: 4vw;
-        justify-content: flex-start
+        /* column-gap: 4vw;
+        justify-content: flex-start */
+        grid-auto-rows: 15%;
     }
 
 
     div.projects div.project {
         min-width: min-content;
         width: auto;
-        height: fit-content;
+        height: 100%;
+        max-height:100%;
         padding: 2%;
         margin-bottom: 4vw;
 
         display: grid;
-        grid-template-columns: 14vw auto;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: min-content;
+    }
+
+    div.projects div.project div{
+        height: 100%;
     }
 
     div.projects div.project img {
-        /* height: 10vh;
-        width: 10vh; */
+        /* height: 10vh; */
+        /* width: 10vh; */
         /* width: 50%; */
         height: 100%;
+        max-height:100%;
         margin: 0;
+        object-fit: contain;
     }
 
 
