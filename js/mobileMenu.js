@@ -19,6 +19,8 @@ function closeMenu() {
     siteNavigation.setAttribute("data-state", "closing");
 
     siteNavigation.addEventListener("animationend",() => {
-        siteNavigation.setAttribute('data-state', 'closed');
+        if (siteNavigation.getAttribute('data-state') === "closing") {
+            siteNavigation.setAttribute('data-state', 'closed');
+        }
     }, {once:true});
 }
