@@ -520,9 +520,10 @@ div.projects div.project {
 }
 
 
-div.projects div.project div img {
-    width: 90%;
-    margin: 5%;
+div.project img {
+    /* width: 90%; */
+    height: unset;
+    width: 100%;
 }
 
 
