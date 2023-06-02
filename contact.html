@@ -7,7 +7,8 @@
     <meta id="viewport" name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact</title>
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/stars.css">
+    <link rel="preload" href="css/stars.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="css/stars.css"></noscript>
     <!-- div favicon -->
     <link rel="icon" type="image/x-icon" href="/img/saud.ico">
     <meta id="theme" name="theme-color" content="black-translucent">
@@ -21,7 +22,7 @@
 <body>
 
 
-    <div id="contact" class="star-container">
+    <!-- <div id="contact" class="star-container">
         <div class="stars">
             <div class="star"></div>
             <div class="star"></div>
@@ -74,12 +75,12 @@
             <div class="star"></div>
             <div class="star"></div>
         </div>
-    </div>
+    </div> -->
 
 
     <header class="backdrop-blue-borderless">
         <div class="color-blob"></div>
-        <h1>Contact Me!</h1>
+        <h1>Contact Me</h1>
         <nav>
             <button type="button" id="menu-toggle" aria-label="Menu" aria-controls="primary-navigation"
                 aria-expanded="false">
@@ -88,10 +89,10 @@
             </button>
 
             <div data-state="closed" id="primary-navigation">
-                <a href="index.html">Home</a>
-                <a href="resume.html">Resume</a>
-                <a href="projects.html">Projects</a>
-                <a href="contact.html">Contact</a>
+                <div><a  class="backdrop-blue-borderless" href="index.html">Home</a></div>
+                <div><a  class="backdrop-blue-borderless" href="resume.html">Resume</a></div>
+                <div><a  class="backdrop-blue-borderless" href="projects.html">Projects</a></div>
+                <div><a  class="backdrop-blue-borderless" href="contact.html">Contact</a></div>
             </div>
         </nav>
     </header>
@@ -145,7 +146,11 @@
         </section>
         <section>
             <h3>Social Media</h3>
-            <p>Placeholder Placeholder Placeholder</p>
+            <p>
+                <a href="https://tinyurl.com/igcjslink">Instagram</a>
+                <a href="https://tinyurl.com/igcjslink">Facebook</a>
+                <a href="https://tinyurl.com/igcjslink">Github</a>
+            </p>
         </section>
     </footer>
     <script src="js/mobileMenu.js"></script>

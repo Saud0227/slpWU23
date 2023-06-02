@@ -7,7 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projects</title>
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/stars.css">
+    <link rel="preload" href="css/stars.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+        <link rel="stylesheet" href="css/stars.css">
+    </noscript>
     <!-- div favicon -->
     <link rel="icon" type="image/x-icon" href="/img/saud.ico">
     <meta name="theme-color" content="black-translucent">
@@ -20,63 +23,6 @@
 
 <body>
 
-    <div id="projects" class="star-container">
-        <div class="stars">
-            <div class="star"></div>
-            <div class="star"></div>
-            <div class="star"></div>
-            <div class="star"></div>
-            <div class="star"></div>
-            <div class="star"></div>
-            <div class="star"></div>
-            <div class="star"></div>
-            <div class="star"></div>
-            <div class="star"></div>
-            <div class="star"></div>
-            <div class="star"></div>
-            <div class="star"></div>
-            <div class="star"></div>
-            <div class="star"></div>
-            <div class="star"></div>
-            <div class="star"></div>
-            <div class="star"></div>
-            <div class="star"></div>
-            <div class="star"></div>
-            <div class="star"></div>
-            <div class="star"></div>
-            <div class="star"></div>
-            <div class="star"></div>
-            <div class="star"></div>
-            <div class="star"></div>
-            <div class="star"></div>
-            <div class="star"></div>
-            <div class="star"></div>
-            <div class="star"></div>
-            <div class="star"></div>
-            <div class="star"></div>
-            <div class="star"></div>
-            <div class="star"></div>
-            <div class="star"></div>
-            <div class="star"></div>
-            <div class="star"></div>
-            <div class="star"></div>
-            <div class="star"></div>
-            <div class="star"></div>
-            <div class="star"></div>
-            <div class="star"></div>
-            <div class="star"></div>
-            <div class="star"></div>
-            <div class="star"></div>
-            <div class="star"></div>
-            <div class="star"></div>
-            <div class="star"></div>
-            <div class="star"></div>
-            <div class="star"></div>
-        </div>
-    </div>
-
-
-
     <header class="backdrop-blue-borderless">
         <div class="color-blob"></div>
         <h1>Projects</h1>
@@ -88,16 +34,16 @@
             </button>
 
             <div data-state="closed" id="primary-navigation">
-                <a href="index.html">Home</a>
-                <a href="resume.html">Resume</a>
-                <a href="projects.html">Projects</a>
-                <a href="contact.html">Contact</a>
+                <div><a class="backdrop-blue-borderless" href="index.html">Home</a></div>
+                <div><a class="backdrop-blue-borderless" href="resume.html">Resume</a></div>
+                <div><a class="backdrop-blue-borderless" href="projects.html">Projects</a></div>
+                <div><a class="backdrop-blue-borderless" href="contact.html">Contact</a></div>
             </div>
         </nav>
     </header>
 
     <div class="projects">
-        <div class="project backdrop-purple-with-border">
+        <div class="backdrop-blue-borderless project">
             <div>
                 <h2>Project</h2>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore voluptatibus dolore soluta
@@ -105,9 +51,11 @@
                     Molestias reiciendis provident sunt excepturi?</p>
                 <p>YYYY</p>
             </div>
-            <img src="img/technology-background-concept-circuit-board-electronic-system-futuristic-hi-tech-light-on-dark-blue-vector.jpg" alt="Temp Image">
+
+            <img class="blue-border" src="img/slpWU2023-1.jpg" alt="Temp Image">
+
         </div>
-        <div class="project backdrop-purple-with-border">
+        <div class="backdrop-blue-borderless project">
             <div>
                 <h2>Project</h2>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore voluptatibus dolore soluta
@@ -115,9 +63,11 @@
                     Molestias reiciendis provident sunt excepturi?</p>
                 <p>YYYY</p>
             </div>
-            <img src="img/technology-background-concept-circuit-board-electronic-system-futuristic-hi-tech-light-on-dark-blue-vector.jpg" alt="Temp Image">
+
+            <img class="blue-border" src="img/slpWU2023-2.jpg" alt="Temp Image">
+
         </div>
-        <div class="project backdrop-purple-with-border">
+        <div class="backdrop-blue-borderless project">
             <div>
                 <h2>Project</h2>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore voluptatibus dolore soluta
@@ -125,27 +75,9 @@
                     Molestias reiciendis provident sunt excepturi?</p>
                 <p>YYYY</p>
             </div>
-            <img src="img/technology-background-concept-circuit-board-electronic-system-futuristic-hi-tech-light-on-dark-blue-vector.jpg" alt="Temp Image">
-        </div>
-        <div class="project backdrop-purple-with-border">
-            <div>
-                <h2>Project</h2>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore voluptatibus dolore soluta
-                    explicabo, animi tempora hic nobis aliquid porro ullam, et iure recusandae assumenda distinctio.
-                    Molestias reiciendis provident sunt excepturi?</p>
-                <p>YYYY</p>
-            </div>
-            <img src="img/technology-background-concept-circuit-board-electronic-system-futuristic-hi-tech-light-on-dark-blue-vector.jpg" alt="Temp Image">
-        </div>
-        <div class="project backdrop-purple-with-border">
-            <div>
-                <h2>Project</h2>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore voluptatibus dolore soluta
-                    explicabo, animi tempora hic nobis aliquid porro ullam, et iure recusandae assumenda distinctio.
-                    Molestias reiciendis provident sunt excepturi?</p>
-                <p>YYYY</p>
-            </div>
-            <img src="img/technology-background-concept-circuit-board-electronic-system-futuristic-hi-tech-light-on-dark-blue-vector.jpg" alt="Temp Image">
+
+            <img class="blue-border" src="img/slpWU2023-3.jpg" alt="Temp Image">
+
         </div>
 
     </div>
@@ -161,7 +93,11 @@
         </section>
         <section>
             <h3>Social Media</h3>
-            <p>Placeholder Placeholder Placeholder</p>
+            <p>
+                <a href="https://tinyurl.com/igcjslink">Instagram</a>
+                <a href="https://tinyurl.com/igcjslink">Facebook</a>
+                <a href="https://tinyurl.com/igcjslink">Github</a>
+            </p>
         </section>
     </footer>
     <script src="js/mobileMenu.js"></script>

@@ -7,7 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Carl Johan Ståhl</title>
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/stars.css">
+    <link rel="preload" href="css/stars.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="css/stars.css"></noscript>
     <!-- div favicon -->
     <link rel="icon" type="image/x-icon" href="/img/saud.ico">
     <meta name="theme-color" content="black-translucent">
@@ -78,7 +79,7 @@
 
     <header class="backdrop-blue-borderless">
         <div class="color-blob"></div>
-        <h1>Carl Johan Ståhl <span class="extra-content">- Software developer</span></h1>
+        <h1>Carl Johan Ståhl - Software developer</h1>
         <nav>
             <button type="button" id="menu-toggle" aria-label="Menu" aria-controls="primary-navigation" aria-expanded="false">
                 <span class="visually-hidden">Menu</span>
@@ -86,10 +87,10 @@
             </button>
 
             <div data-state="closed" id="primary-navigation">
-                <a href="index.html">Home</a>
-                <a href="resume.html">Resume</a>
-                <a href="projects.html">Projects</a>
-                <a href="contact.html">Contact</a>
+                <div><a class="backdrop-blue-borderless" href="index.html">Home</a></div>
+                <div><a class="backdrop-blue-borderless" href="resume.html">Resume</a></div>
+                <div><a class="backdrop-blue-borderless" href="projects.html">Projects</a></div>
+                <div><a class="backdrop-blue-borderless" href="contact.html">Contact</a></div>
             </div>
         </nav>
     </header>
@@ -111,14 +112,13 @@
             <div class="color-blob"></div>
             <div class="color-blob"></div>
             <div class="color-blob"></div>
-            <div class="color-blob"></div>
         </div>
         <img id="profile" src="img/saud.png" alt="saud profile">
 
     </div>
 
     <div id="desktop-index-cover-container">
-        <img src="img/city_blue.png" alt="city backdrop" id="desktop-index-cover">
+        <img src="img/city_blue_small.png" alt="city backdrop" id="desktop-index-cover">
     </div>
 
     <footer class="backdrop-blue-borderless">
@@ -132,7 +132,11 @@
         </section>
         <section>
             <h3>Social Media</h3>
-            <p>Placeholder Placeholder Placeholder</p>
+            <p>
+                <a href="https://tinyurl.com/igcjslink">Instagram</a>
+                <a href="https://tinyurl.com/igcjslink">Facebook</a>
+                <a href="https://tinyurl.com/igcjslink">Github</a>
+            </p>
         </section>
     </footer>
     <script src="js/mobileMenu.js"></script>

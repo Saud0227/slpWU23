@@ -7,7 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Resume</title>
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/stars.css">
+    <link rel="preload" href="css/stars.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="css/stars.css"></noscript>
     <!-- div favicon -->
     <link rel="icon" type="image/x-icon" href="/img/saud.ico">
     <meta name="theme-color" content="black-translucent">
@@ -20,114 +21,6 @@
 
 <body>
 
-    <div id="resume" class="star-container">
-        <div id="stars-1" class="stars">
-            <div class="star"></div>
-            <div class="star"></div>
-            <div class="star"></div>
-            <div class="star"></div>
-            <div class="star"></div>
-            <div class="star"></div>
-            <div class="star"></div>
-            <div class="star"></div>
-            <div class="star"></div>
-            <div class="star"></div>
-            <div class="star"></div>
-            <div class="star"></div>
-            <div class="star"></div>
-            <div class="star"></div>
-            <div class="star"></div>
-            <div class="star"></div>
-            <div class="star"></div>
-            <div class="star"></div>
-            <div class="star"></div>
-            <div class="star"></div>
-            <div class="star"></div>
-            <div class="star"></div>
-            <div class="star"></div>
-            <div class="star"></div>
-            <div class="star"></div>
-            <div class="star"></div>
-            <div class="star"></div>
-            <div class="star"></div>
-            <div class="star"></div>
-            <div class="star"></div>
-            <div class="star"></div>
-            <div class="star"></div>
-            <div class="star"></div>
-            <div class="star"></div>
-            <div class="star"></div>
-            <div class="star"></div>
-            <div class="star"></div>
-            <div class="star"></div>
-            <div class="star"></div>
-            <div class="star"></div>
-            <div class="star"></div>
-            <div class="star"></div>
-            <div class="star"></div>
-            <div class="star"></div>
-            <div class="star"></div>
-            <div class="star"></div>
-            <div class="star"></div>
-            <div class="star"></div>
-            <div class="star"></div>
-            <div class="star"></div>
-        </div>
-        <div id="stars-2" class="stars">
-            <div class="star"></div>
-            <div class="star"></div>
-            <div class="star"></div>
-            <div class="star"></div>
-            <div class="star"></div>
-            <div class="star"></div>
-            <div class="star"></div>
-            <div class="star"></div>
-            <div class="star"></div>
-            <div class="star"></div>
-            <div class="star"></div>
-            <div class="star"></div>
-            <div class="star"></div>
-            <div class="star"></div>
-            <div class="star"></div>
-            <div class="star"></div>
-            <div class="star"></div>
-            <div class="star"></div>
-            <div class="star"></div>
-            <div class="star"></div>
-            <div class="star"></div>
-            <div class="star"></div>
-            <div class="star"></div>
-            <div class="star"></div>
-            <div class="star"></div>
-            <div class="star"></div>
-            <div class="star"></div>
-            <div class="star"></div>
-            <div class="star"></div>
-            <div class="star"></div>
-            <div class="star"></div>
-            <div class="star"></div>
-            <div class="star"></div>
-            <div class="star"></div>
-            <div class="star"></div>
-            <div class="star"></div>
-            <div class="star"></div>
-            <div class="star"></div>
-            <div class="star"></div>
-            <div class="star"></div>
-            <div class="star"></div>
-            <div class="star"></div>
-            <div class="star"></div>
-            <div class="star"></div>
-            <div class="star"></div>
-            <div class="star"></div>
-            <div class="star"></div>
-            <div class="star"></div>
-            <div class="star"></div>
-            <div class="star"></div>
-        </div>
-    </div>
-
-
     <header class="backdrop-blue-borderless">
         <div class="color-blob"></div>
         <h1>Resume</h1>
@@ -139,10 +32,10 @@
             </button>
 
             <div data-state="closed" id="primary-navigation">
-                <a href="index.html">Home</a>
-                <a href="resume.html">Resume</a>
-                <a href="projects.html">Projects</a>
-                <a href="contact.html">Contact</a>
+                <div><a  class="backdrop-blue-borderless" href="index.html">Home</a></div>
+                <div><a  class="backdrop-blue-borderless" href="resume.html">Resume</a></div>
+                <div><a  class="backdrop-blue-borderless" href="projects.html">Projects</a></div>
+                <div><a  class="backdrop-blue-borderless" href="contact.html">Contact</a></div>
             </div>
         </nav>
     </header>
@@ -152,18 +45,19 @@
             <div class="header-item backdrop-purple-with-border">
                 <h2>Education</h2>
             </div>
-            <div class="backdrop-purple-with-border">
+            <!-- <div class="backdrop-purple-with-border"> -->
+            <div class="">
                 <div class="box-item">
                     <h3>Education</h3>
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla eligendi, dolorem consequuntur
                         recusandae, vel temporibus praesentium culpa sit repudiandae pariatur architecto accusamus, vero
                         quam labore. Ipsa autem expedita possimus eos.</p>
-                    <p><span class="extra-content">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla
                             eligendi,
                             dolorem consequuntur
                             recusandae, vel temporibus praesentium culpa sit repudiandae pariatur architecto accusamus,
                             vero
-                            quam labore. Ipsa autem expedita possimus eos.</span></p>
+                            quam labore. Ipsa autem expedita possimus eos.</p>
                     <p>Year: XXXX-XXXX</p>
                 </div>
                 <div class="box-item">
@@ -171,12 +65,12 @@
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla eligendi, dolorem consequuntur
                         recusandae, vel temporibus praesentium culpa sit repudiandae pariatur architecto accusamus, vero
                         quam labore. Ipsa autem expedita possimus eos.</p>
-                    <p><span class="extra-content">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla
                             eligendi,
                             dolorem consequuntur
                             recusandae, vel temporibus praesentium culpa sit repudiandae pariatur architecto accusamus,
                             vero
-                            quam labore. Ipsa autem expedita possimus eos.</span></p>
+                            quam labore. Ipsa autem expedita possimus eos.</p>
                     <p>Year: XXXX-XXXX</p>
                 </div>
                 <div class="box-item">
@@ -184,12 +78,12 @@
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla eligendi, dolorem consequuntur
                         recusandae, vel temporibus praesentium culpa sit repudiandae pariatur architecto accusamus, vero
                         quam labore. Ipsa autem expedita possimus eos.</p>
-                    <p><span class="extra-content">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla
                             eligendi,
                             dolorem consequuntur
                             recusandae, vel temporibus praesentium culpa sit repudiandae pariatur architecto accusamus,
                             vero
-                            quam labore. Ipsa autem expedita possimus eos.</span></p>
+                            quam labore. Ipsa autem expedita possimus eos.</p>
                     <p>Year: XXXX-XXXX</p>
                 </div>
             </div>
@@ -198,19 +92,19 @@
             <div class="header-item backdrop-purple-with-border">
                 <h2>Work</h2>
             </div>
-            <div class="backdrop-purple-with-border">
-
+            <!-- <div class="backdrop-purple-with-border"> -->
+            <div class="">
                 <div class="box-item">
                     <h3>Work Item</h3>
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla eligendi, dolorem consequuntur
                         recusandae, vel temporibus praesentium culpa sit repudiandae pariatur architecto accusamus, vero
                         quam labore. Ipsa autem expedita possimus eos.</p>
-                    <p><span class="extra-content">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla
                             eligendi,
                             dolorem consequuntur
                             recusandae, vel temporibus praesentium culpa sit repudiandae pariatur architecto accusamus,
                             vero
-                            quam labore. Ipsa autem expedita possimus eos.</span></p>
+                            quam labore. Ipsa autem expedita possimus eos.</p>
                     <p>Year: XXXX-XXXX</p>
                 </div>
                 <div class="box-item">
@@ -218,12 +112,12 @@
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla eligendi, dolorem consequuntur
                         recusandae, vel temporibus praesentium culpa sit repudiandae pariatur architecto accusamus, vero
                         quam labore. Ipsa autem expedita possimus eos.</p>
-                    <p><span class="extra-content">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla
                             eligendi,
                             dolorem consequuntur
                             recusandae, vel temporibus praesentium culpa sit repudiandae pariatur architecto accusamus,
                             vero
-                            quam labore. Ipsa autem expedita possimus eos.</span></p>
+                            quam labore. Ipsa autem expedita possimus eos.</p>
                     <p>Year: XXXX-XXXX</p>
                 </div>
                 <div class="box-item">
@@ -231,12 +125,12 @@
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla eligendi, dolorem consequuntur
                         recusandae, vel temporibus praesentium culpa sit repudiandae pariatur architecto accusamus, vero
                         quam labore. Ipsa autem expedita possimus eos.</p>
-                    <p><span class="extra-content">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla
                             eligendi,
                             dolorem consequuntur
                             recusandae, vel temporibus praesentium culpa sit repudiandae pariatur architecto accusamus,
                             vero
-                            quam labore. Ipsa autem expedita possimus eos.</span></p>
+                            quam labore. Ipsa autem expedita possimus eos.</p>
                     <p>Year: XXXX-XXXX</p>
                 </div>
             </div>
@@ -245,8 +139,22 @@
             <div class="header-item backdrop-purple-with-border">
                 <h2>Experiences</h2>
             </div>
-            <div class="backdrop-purple-with-border">
-
+            <!-- <div class="backdrop-purple-with-border"> -->
+            <div class="experience-boxes">
+                <div class="box-item experiences">
+                    <p>Lorem ipsum dolor - Lorem ipsum dolorem</p>
+                </div>
+                <div class="box-item experiences">
+                    <p>Lorem ipsum dolor - Lorem ipsum dolorem</p>
+                </div>
+                <div class="box-item experiences">
+                    <p>Lorem ipsum dolor - Lorem ipsum dolorem</p>
+                </div>
+                <div class="box-item experiences">
+                    <p>Lorem ipsum dolor - Lorem ipsum dolorem</p>
+                </div>
+            </div>
+            <div class="experience-boxes">
                 <div class="box-item experiences">
                     <p>Lorem ipsum dolor - Lorem ipsum dolorem</p>
                 </div>
@@ -277,7 +185,11 @@
         </section>
         <section>
             <h3>Social Media</h3>
-            <p>Placeholder Placeholder Placeholder</p>
+            <p>
+                <a href="https://tinyurl.com/igcjslink">Instagram</a>
+                <a href="https://tinyurl.com/igcjslink">Facebook</a>
+                <a href="https://tinyurl.com/igcjslink">Github</a>
+            </p>
         </section>
     </footer>
     <script src="js/mobileMenu.js"></script>
