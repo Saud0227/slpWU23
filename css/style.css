@@ -55,8 +55,8 @@ span.visually-hidden {
 #menu-toggle {
     padding: 0.5em;
     position: fixed;
-    right: 10px;
-    top: 10px;
+    right: 1.5vw;
+    top: 1.5vw;
     z-index: 10;
 
     background: transparent;
@@ -561,10 +561,11 @@ body::-webkit-scrollbar-thumb {
     /* creates padding around scroll thumb */
 }
 
-body {
+html {
     scrollbar-width: thin;
     /* "auto" or "thin" */
     scrollbar-color: #2e64a6#0f2642;
+    /* Firefox */
 }
 
 
@@ -785,19 +786,15 @@ div#desktop-index-cover-container img#desktop-index-cover {
         grid-template-rows: min-content;
     }
 
-    div.projects div.project div{
-        height: 100%;
-    }
-
     div.projects div.project div:last-child{
         display: flex;
         justify-content: end;
     }
 
-    div.projects div.project div img {
+    div.projects div.project img {
         height: 40vh;
+        width: unset;
         align-self: center;
-        width:fit-content;
         margin: 0;
         object-fit: contain;
         justify-self: end;
